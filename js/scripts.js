@@ -8,15 +8,18 @@ $(document).ready(function() {
 var contactSections = ["firstName", "lastName", "street", "city", "state"]
 
 
-$("form#new-contact").submit(function(event) {
-  event.preventDefault();
+  $("form#new-contact").submit(function(event) {
+    event.preventDefault();
     var lastName = $("#new-lastName").val();
     var firstName = $("#new-firstName").val();
   if (!(lastName || firstName)) {
     //warn of invalid input, ask for a name
     alert("error caught");
   } else {
-    console.log(lastName + firstName);
+    console.log(firstName + lastName);
+    $("#contactList").append("<li>" + firstName + " " + lastName + "</li>");
+
+
     //the rest
   }
     // var contactSections = contactSections.map(function(input) {
