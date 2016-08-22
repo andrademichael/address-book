@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="new-contact">
+        <div class="form-group">
+          <label for="new-firstName">First Name</label>
+          <input id="new-firstName" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="new-lastName">Last Name</label>
+          <input id="new-lastName" class="form-control" type="text">
+        </div>
+
+        <div id="addressSection">
+          <div class="form-group">
+            <label for="new-street">Street</label>
+            <input id="new-street" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="new-city">City</label>
+            <input id="new-city" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="new-state">State</label>
+            <input id="new-state" class="form-control" type="text">
+          </div>
+          <button id="add-address" class="btn btn-primary">Another address</button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+
+
+
+      </form>
+      <h2>Contacts:</h2>
+      <ul id="contactList"></ul>
+    </div>
+  </body>
+</html>
